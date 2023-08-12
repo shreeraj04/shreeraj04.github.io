@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPI Payment Example</title>
+</head>
+<body>
+    <p>Click the button below to initiate UPI payment:</p>
+    <button onclick="initiateUpiPayment()">Make UPI Payment</button>
+
+    <script>
+        function initiateUpiPayment() {
+            // Define the UPI URL
+            var upiUrl = 'upi://pay?pa=9632604841@paytm&pn=PaytmUser&mc=0000&mode=02&purpose=00&orgid=159761';
+
+            // Open the UPI payment link
+            window.location.href = upiUrl;
+        }
+    </script>
+</body>
+</html>
