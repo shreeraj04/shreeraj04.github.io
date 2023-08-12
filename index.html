@@ -4,8 +4,7 @@
     <title>UPI Payment Example</title>
 </head>
 <body>
-    <p>Click the button below to initiate UPI payment:</p>
-    <button onclick="initiateUpiPayment()">Make UPI Payment</button>
+    <p>The UPI payment will be initiated automatically when the page loads.</p>
 
     <script>
         function initiateUpiPayment() {
@@ -15,6 +14,11 @@
             // Open the UPI payment link
             window.location.href = upiUrl;
         }
+
+        // Call the function when the page loads
+        window.onload = function() {
+            initiateUpiPayment();
+        };
     </script>
 </body>
 </html>
